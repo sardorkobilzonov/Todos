@@ -1,0 +1,40 @@
+.todo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  background-color: #15101c;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.todos-h2 {
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.todo p {
+  flex-grow: 1;
+  text-align: left;
+  color: #9e78cf;
+  font-size: 16px;
+}
+
+.todo-svg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.todo-btn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  background-color: #15101c;
+}
