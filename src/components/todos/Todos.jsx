@@ -43,6 +43,7 @@ const Todos = () => {
         // }
       }
     });
+    setTodos(updateTodos);
   }
 
   return (
@@ -50,13 +51,17 @@ const Todos = () => {
       <h2 className="todos-h2">Todos - {todos.length}</h2>
       <ol>
         {todos.map((todo, index) => (
-          <li key={todo.id} className="todo">
-            <input
-              onChange={() => updateTodo(todo.id)}
+          <li
+            key={todo.id}
+            className={"todo "}
+            // ${todo.checked ? "checked" : ""}
+          >
+            {/* <input
               type="checkbox"
               name={todo.text}
               checked={todo.checked}
-            />
+              onChange={() => updateTodo(todo.id)}
+            /> */}
             <p>{todo.text}</p>
             <div className="todo-svg">
               {" "}
